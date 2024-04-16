@@ -8,7 +8,7 @@ body {
 header {
     background: #007BFF;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 nav {
@@ -20,26 +20,50 @@ nav {
 }
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 20px;
     text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+nav a:hover, nav a:focus {
+    background-color: #555; /* Slightly lighter than the nav background for a hover effect */
+    border-radius: 5px;
 }
 main {
     padding: 20px;
     background: white;
-    margin: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow to the main container for better focus */
 }
 section {
     margin-bottom: 20px;
 }
-h1, h2 {
+h2 {
     color: #007BFF;
 }
 .content {
     margin-bottom: 20px;
 }
 .footer {
+    position:fixed;
     text-align: center;
     padding: 20px 0;
     background: #333;
     color: white;
+}
+ol, ul {
+    padding-left: 20px; 
+}
+p {
+    line-height: 1.6; 
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav a {
+        margin: 10px 0; 
+        text-align: center; 
+    }
 }
